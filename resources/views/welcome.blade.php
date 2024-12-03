@@ -173,4 +173,10 @@
             </div>
         </div>
     </body>
+    <script>
+        Echo.channel('notifications')
+    .listen('NotificationEvent', (event) => {
+        alert(event.message);  // Replace this with your custom notification handling
+    });
+    </script>
 </html>
